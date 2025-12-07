@@ -1,0 +1,67 @@
+/* Copy all previous styles first */
+
+/* What We Do Items */
+.what-we-do-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.what-we-do-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    animation: fadeInUp 0.8s forwards;
+}
+
+/* Stagger animation delay */
+.what-we-do-item:nth-child(1) { animation-delay: 0.2s; }
+.what-we-do-item:nth-child(2) { animation-delay: 0.4s; }
+.what-we-do-item:nth-child(3) { animation-delay: 0.6s; }
+
+.what-we-do-item:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Pentagon Animation */
+.pentagon {
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0;
+    animation: fadeInScale 0.8s forwards;
+}
+
+.pentagon:nth-child(1) { animation-delay: 0.2s; }
+.pentagon:nth-child(2) { animation-delay: 0.4s; }
+.pentagon:nth-child(3) { animation-delay: 0.6s; }
+
+.pentagon:hover {
+    transform: scale(1.1);
+}
+
+/* Keyframes */
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInScale {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+    .what-we-do-row,
+    .pentagon-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
