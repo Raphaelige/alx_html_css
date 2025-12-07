@@ -1,0 +1,92 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ------------------------
+   OUR RESULTS (TASK 3)
+------------------------- */
+.our-results {
+    background-image: url("images/headphones_hero_2.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+}
+
+.our-results h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.our-results p {
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+/* Row of pentagons */
+.results-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.result-item {
+    width: 22%;
+    text-align: center;
+}
+
+.result-item p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Temporary pentagon graphic (Task 6 removes this image) */
+.pentagon {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    background-image: url("images/pentagon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /* center number */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pentagon h3 {
+    font-size: 24px;
+}
+
+/* ------------------------
+   RESPONSIVE (480px)
+------------------------- */
+@media (max-width: 480px) {
+
+    .results-row {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .result-item {
+        width: 100%;
+    }
+}
