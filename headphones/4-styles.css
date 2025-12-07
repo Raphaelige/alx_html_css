@@ -1,0 +1,42 @@
+/* Copy all previous styles from 4-styles.css first */
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 30px 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-links a:active {
+    color: #FF6565;
+}
+
+/* Responsive Footer */
+@media screen and (max-width: 480px) {
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
