@@ -1,0 +1,121 @@
+* Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Reusable container */
+.container {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+    position: absolute;  
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 10;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.nav a:hover {
+    color: #FF6565;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    background-image: url("images/headphones_hero.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.cta-btn {
+    background-color: #FF6565;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.cta-btn:hover {
+    opacity: 0.9;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 480px) {
+    .nav {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .cta-btn {
+        padding: 10px 22px;
+    }
+}
