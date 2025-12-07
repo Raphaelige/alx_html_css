@@ -1,0 +1,43 @@
+/* Copy all previous styles from 7-styles.css first */
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background-color: var(--text-color);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 480px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        background-color: white;
+        position: absolute;
+        top: 70px; /* header height */
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
