@@ -1,0 +1,62 @@
+/* -----------------------
+   WHAT WE DO SECTION
+-------------------------*/
+.what-we-do {
+    max-width: 1000px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.what-we-do h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.what-we-do p {
+    color: #555;
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.service-item {
+    width: 22%;
+    text-align: center;
+}
+
+.service-item span {
+    font-size: 60px;
+    color: #FF6565;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    color: #777;
+    font-size: 14px;
+}
+
+/* ------------- MOBILE VIEW ---------- */
+@media (max-width: 480px) {
+    .services {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .service-item {
+        width: 100%;
+    }
+}
